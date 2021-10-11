@@ -8,20 +8,27 @@ beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
 letter_o = 'o'
 # Expected output: ['coffee', 'soda water']
 
-def particular
-result = beverages_array.select {|item| item.include?("o")}
-p result
-end
+# def particular
+# result = beverages_array.select {|item| item.include?("o")}
+# p result
+# end
 
 
 letter_t = 't'
 # Expected output: ['tea', 'water', 'soda water']
 
-def particular
-result = beverages_array.select {|item| item.include?("t")}
-p result
-end
+# def particular
+# result = beverages_array.select {|item| item.include?("t")}
+# p result
+# end
 
+def particular array,letter
+    array.select do |value|
+    value.include?(letter)
+    end
+end
+p particular(beverages_array,letter_o)
+p particular(beverages_array,letter_t)
 
 
 
