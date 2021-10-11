@@ -8,14 +8,20 @@ beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
 letter_o = 'o'
 # Expected output: ['coffee', 'soda water']
 
+def particular
 result = beverages_array.select {|item| item.include?("o")}
 p result
+end
+
 
 letter_t = 't'
 # Expected output: ['tea', 'water', 'soda water']
 
+def particular
 result = beverages_array.select {|item| item.include?("t")}
 p result
+end
+
 
 
 
