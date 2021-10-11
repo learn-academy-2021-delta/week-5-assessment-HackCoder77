@@ -59,13 +59,13 @@ class Bike
         @model = 'BMX'
     end
 
-    def pedal_faster
-         @current_speed += 10
+    def pedal_faster mph
+         @current_speed += mph
      end 
 
-    def brake
-         @current_speed -= 10
-         @current_speed.clamp(0, 50)
+    def brake mph
+         @current_speed -= mph
+         @current_speed = [@current_speed, 0, 50].sort[1]
 
      end
 
@@ -74,7 +74,12 @@ class Bike
     end
 end
 
-flying = Bike.new(2 ,'BMX' ,10)
+flying = Bike.new(2 ,'BMX' ,20)
+
+p flying.pedal_faster(10)
+p flying.pedal_faster(10)
+
+p flying.brake(40)
 
 puts flying.bike_info
   
