@@ -26,15 +26,19 @@ p particular(beverages_array,letter_t)
 nums_array1 = [42, 7, 27]
 # Expected output: 76
 
-total = nums_array1.sum
-p total
-
-
 nums_array2 = [25, 17, 47, 11]
 # Expected output: 100
 
-total = nums_array2.sum
-p total
+
+def totals array
+    value = array.sum
+    end
+    
+p totals(nums_array1)
+p totals(nums_array2)
+
+
+
 
 
 # --------------------3a) Create a class called Bike that is initialized with a model, wheels, and current_speed. The default number of wheels is 2. The current_speed should start at 0. Create a bike_info method that returns a sentence with all the data from the bike object.
