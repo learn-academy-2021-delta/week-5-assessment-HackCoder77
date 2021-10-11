@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer:
       Most Ruby methods are accessors. Such as attr accessor, setter methods, getter methods, all those are not mutating they are just accessing the data.
 
-  Researched answer:
+  Researched answer: most Ruby methods are accessors and can be made permanent with the ! operator. The methods with ! are specifically called bang methods. If the bang method is executed and did not mutate the object, it will return nil.
 
 
 
